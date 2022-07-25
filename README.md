@@ -5,7 +5,7 @@
 <p align="center">
   Simple Tauri app to send messages using webhooks in Discord.
   <br/>
-  <a href="https://kadium.kasper.space"><b>Download for Windows, Mac or Linux</b></a>
+  <a href="https://github.com/Auax/discord-webhook-sender/releases"><b>Download for Windows, Mac or Linux</b></a>
 </p>
 <br/>
 
