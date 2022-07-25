@@ -1,11 +1,11 @@
 [package]
-name = "discord-webhook-sender"
+name = "Discord-Webhook-Sender"
 version = "0.1.0"
 description = "Simple Tauri app to send messages using webhooks in Discord."
 authors = ["Ibai Farina"]
 license = "MIT"
 repository = "https://github.com/Auax/discord-webhook-sender"
-default-run = "discord-webhook-sender"
+default-run = "Discord-Webhook-Sender"
 edition = "2021"
 rust-version = "1.57"
 

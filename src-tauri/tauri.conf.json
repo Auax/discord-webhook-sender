@@ -7,7 +7,7 @@
     "distDir": "../dist"
   },
   "package": {
-    "productName": "discord-webhook-sender",
+    "productName": "Discord Webhook Sender",
     "version": "0.1.0"
   },
   "tauri": {
