@@ -30,7 +30,7 @@
         "icons/icon.ico"
       ],
       "identifier": "com.discord-webhook-sender.dev",
-      "longDescription": "",
+      "longDescription": "Simple Tauri app to send messages using webhooks in Discord",
       "macOS": {
         "entitlements": null,
         "exceptionDomain": "",
@@ -39,7 +39,7 @@
         "signingIdentity": null
       },
       "resources": [],
-      "shortDescription": "",
+      "shortDescription": "Send Discord webhooks",
       "targets": "all",
       "windows": {
         "certificateThumbprint": null,

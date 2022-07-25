@@ -5,7 +5,6 @@ export const colors = {
     base100: "#242424",
     base200: "#1f1f1f",
     base300: "#151515",
-    basePText: "#bebebe",
     electricBlue: "#256cd3",
 }
 
@@ -51,8 +50,14 @@ const sharedInputStyles = css`
 `
 
 export const Input = styled.input`
-  ${sharedInputStyles}
+  ${sharedInputStyles};
+  transition: all 0.15s ease-in-out;
+  &[type=submit] {
+    cursor: pointer;
+  }
   &[type=submit]:hover {
+    box-shadow: 0 8px 20px 2px rgba(0, 0, 0, 0.2);
+    transform: translateY(-1px);
     ${({overrideBackground}) => overrideBackground ? "" : `background-color: ${colors.base300};`}
   }
 `

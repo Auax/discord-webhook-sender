@@ -126,7 +126,7 @@ function App() {
                 <form className="mt-2" onSubmit={formSubmit}>
                     <div className="grid gap-2 grid-cols-2">
                         <Textarea type="text" placeholder="Message" id="message" className="w-full" required
-                               autoComplete="off"/>
+                                  autoComplete="off"/>
                         <Input type="text" placeholder="Webhook URL" id="webhook_url" className="w-full"
                                required autoComplete="off"/>
                         <Input type="text" placeholder="Username (optional)" id="username" className="w-full"/>
@@ -134,7 +134,7 @@ function App() {
                                autoComplete="off"/>
                     </div>
                     <div className="text-right mt-2 flex">
-                        <Input type="submit" value="Send" className="w-full bg-rose-500 hover:bg-rose-900"
+                        <Input type="submit" value="Send" className="w-full bg-blue-800 hover:bg-blue-700"
                                overrideBackground={true}/>
                     </div>
                 </form>
