@@ -36,6 +36,21 @@ export const Container = styled.div`
   }
 `
 
+export const Button = styled.button`
+  border-radius: 5px;
+  padding: 0.6em 1.2em;
+  transition: all 0.1s ease-in-out;
+  font-size: .9em;
+  font-weight: bold;
+  font-family: inherit;
+  background-color: #1f1f1f;
+  cursor: pointer;
+
+  &:hover {
+    background: #151515;
+  }
+`
+
 export const Separator = styled.hr`
   border-color: rgba(255, 255, 255, 0.1);
 `
@@ -45,21 +60,35 @@ const sharedInputStyles = css`
   ${({overrideBackground}) => overrideBackground ? "" : `background-color: ${colors.base200};`}
   border-radius: 5px;
   font-size: .9em;
-  transition: background-color 0.1s ease-in-out;
   height: 43px;
+  transition: all 0.15s ease-in-out;
 `
 
 export const Input = styled.input`
   ${sharedInputStyles};
-  transition: all 0.15s ease-in-out;
+`
+
+export const SubmitInput = styled.input`
   &[type=submit] {
+    background-color: rgb(0, 35, 255);
     cursor: pointer;
+    padding: 10px 15px;
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    border-radius: 5px;
+    transition: all 0.15s ease-in-out;
   }
+
   &[type=submit]:hover {
-    box-shadow: 0 8px 20px 2px rgba(0, 0, 0, 0.2);
-    transform: translateY(-1px);
-    ${({overrideBackground}) => overrideBackground ? "" : `background-color: ${colors.base300};`}
+    //box-shadow: 0 8px 20px 2px rgba(0, 0, 0, 0.2);
+    //transform: translateY(-1px);
+    background-color: rgb(42, 66, 222);
   }
+
+  &[type=submit]:focus {
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    background-color: rgb(0, 21, 162);
+  }
+
 `
 
 export const Textarea = styled.textarea`

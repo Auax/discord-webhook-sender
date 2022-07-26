@@ -5,7 +5,7 @@ import {toast, ToastContainer, Zoom} from 'react-toastify'
 import 'react-toastify/dist/ReactToastify.css'
 import {useEffect, useState} from "react"
 import {WebviewWindow} from "@tauri-apps/api/window"
-import {Container, Input, Separator, Textarea} from "./components/Styled"
+import {Button, Container, Input, Separator, SubmitInput, Textarea} from "./components/Styled"
 
 function App() {
     // Create stats useState
@@ -134,8 +134,7 @@ function App() {
                                autoComplete="off"/>
                     </div>
                     <div className="text-right mt-2 flex">
-                        <Input type="submit" value="Send" className="w-full bg-blue-800 hover:bg-blue-700"
-                               overrideBackground={true}/>
+                        <SubmitInput type="submit" value="Send" className="w-full"/>
                     </div>
                 </form>
                 <Separator className="mt-8 mb-5"/>
@@ -149,7 +148,7 @@ function App() {
                                 textType="failed"></MetricCard>
                 </div>
                 <div className="text-right">
-                    <button className="mt-2" onClick={clearData}>Clear Data</button>
+                    <Button className="mt-2" onClick={clearData}>Clear Data</Button>
                 </div>
             </Container>
         </div>

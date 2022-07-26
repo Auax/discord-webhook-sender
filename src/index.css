@@ -3,6 +3,7 @@
 @tailwind utilities;
 
 :root {
+    user-select: none;
     margin: 0;
     font-family: Inter, Avenir, Helvetica, Arial, sans-serif;
     --toastify-font-family: Inter, Avenir, Helvetica, Arial, sans-serif;
@@ -32,20 +33,6 @@ a:hover {
     color: #2456c5;
 }
 
-button {
-    border-radius: 5px;
-    padding: 0.6em 1.2em;
-    font-size: .9em;
-    font-weight: bold;
-    font-family: inherit;
-    background-color: #1f1f1f;
-    cursor: pointer;
-    transition: border-color 0.25s;
-}
-
-button:hover {
-    background: #151515;
-}
 
 label {
     font-size: .9em;

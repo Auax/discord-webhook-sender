@@ -7,12 +7,12 @@ const MetricCardStyled = styled.div`
   background: ${colors.base200};
   padding: 15px;
   border-radius: 5px;
-  //border: 1px solid #1a1a1a;
 `;
 
 const MetricTextBase = styled.span`
   font-size: 2.4em;
   font-weight: 900;
+  user-select: text;
 `
 
 const MetricText = (props) => {
@@ -29,10 +29,10 @@ const MetricText = (props) => {
 }
 
 const MetricCard = (props) => {
+
     return (
         <MetricCardStyled textAlign={props.textAlign} className={props.className}>
             <p className="text-neutral-400">{props.title}</p>
-            {/*<p className="text-sm text-neutral-600">{props.description}</p>*/}
             <MetricText textType={props.textType}>{props.number}</MetricText>
         </MetricCardStyled>
     )
